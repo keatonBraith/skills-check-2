@@ -11,6 +11,9 @@ class App extends Component {
     this.state = {
       products: [],
     };
+    this.getProducts = this.getProducts.bind(this);
+    this.addProduct = this.addProduct.bind(this);
+    this.deleteProduct = this.deleteProduct.bind(this);
   }
 
   getProducts = () => {
